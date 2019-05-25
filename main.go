@@ -13,7 +13,7 @@ func main() {
 }
 
 func dcm2json(file string) string {
-	out, err := exec.Command("./bin/x64/dcm2json/dcm2json", "-fc", "+fo", "-q", file).Output()
+	out, err := exec.Command("./bin/x64/dcm2json/dcm2json", "-fc", "-q", file).Output()
 	if err != nil {
 		log.Fatal(err)
 	}
