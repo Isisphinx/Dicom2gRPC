@@ -23,18 +23,3 @@ func dcm2json(file string) string {
 	}
 	return outStr
 }
-
-// func dcm2jsonstream(file string) {
-// 	cmd := exec.Command("./bin/x64/dcm2json/dcm2json", "-fc", "+fo", "-q", file)
-
-// 	stdout, _ := cmd.StdoutPipe()
-// 	cmd.Start()
-
-// 	scanner := bufio.NewScanner(stdout)
-// 	scanner.Split(bufio.ScanWords)
-// 	for scanner.Scan() {
-// 		m := scanner.Text()
-// 		fmt.Println(m)
-// 	}
-// 	cmd.Wait()
-// }
